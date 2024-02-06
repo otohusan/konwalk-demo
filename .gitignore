@@ -25,3 +25,6 @@ dist-SPA
 *.sw?
 
 .env
+
+this_file_s_demo
+.github
