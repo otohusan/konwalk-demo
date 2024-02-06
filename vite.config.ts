@@ -12,7 +12,7 @@ export default defineConfig({
   plugins: [react()],
   base:
     process.env.VITE_GITHUB_PAGES === "true"
-      ? "/FoxEd/" // レポジトリ名を設定
+      ? "/konwalk-demo/" // レポジトリ名を設定
       : "./",
   build: {
     rollupOptions: {

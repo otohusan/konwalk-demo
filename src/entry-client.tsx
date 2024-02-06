@@ -9,7 +9,11 @@ if (container) {
   hydrateRoot(
     container,
     <HelmetProvider>
-      <BrowserRouter>
+      <BrowserRouter
+        basename={
+          import.meta.env.VITE_GITHUB_PAGES === "true" ? "/konwalk-demo/" : "/"
+        }
+      >
         <App />
       </BrowserRouter>
     </HelmetProvider>
