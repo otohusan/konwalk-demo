@@ -25,8 +25,6 @@ function App() {
       {/* <HelmetProvider> */}
       <Routes>
         <Route
-          // SSRの場合とそうでない場合のrootを分けている、試し
-          // path={import.meta.env.SSR ? "/playQuiz" : "/"}
           path="/"
           element={
             <PlayQuiz
@@ -60,8 +58,7 @@ function App() {
         />
 
         <Route
-          // path={import.meta.env.SSR ? "/" : "/chooseQuizData"}
-          path="/chooseQuizData"
+          path="/ChooseQuizData"
           // 全てのクイズのデータを渡して、選択させる
           element={
             <ChooseQuizData quizzes={allQuizzes} setQuizzes={setQuizzes} />
